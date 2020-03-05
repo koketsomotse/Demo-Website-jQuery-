@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html la ="en">
+<head>
+	<title>Fresh Wear Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+		
+	<div class="background">
+	
+		<div class="nav">
+			<a class="a active" href ="#">HOME</a>
+			<a class="b" href ="#">ABOUT ME</a>
+			<a class="c" href ="#">MY GALLERY</a>
+			<a class="d" href ="#">CONTACT ME</a>
+		</div>
+	
+	
+		<div class="content">
+			<div class="home">
+				<h1>I AM KAPFRESH</h1>
+				<h3>Software Engineer|Drone Engineer|Musician|Fashion Designer</h3>
+			</div>
+	
+	
+		<div class="aboutme">
+			<p><b>Welcome every one</b><br>
+		
+			fdgfjd;gifdjgkijgueiguer[oigugoiui ihtrigggigfdgifdgiguregoiunigimbfgibidbh;b;kibki
+			bfdgfd;jfdhjhjdghfdkgfdhgifdhgfdijghfdughfdugfdhgufhgughugfhdgl;ufhgfudhgfdugfdgfd
+			gdjhgdighdighfdifhgifhgfdg<br>
+			dfgfdhjgfdigfdiifhgfdighihfdighi;i;gifhgf;d;fogi;dfoighig</p>
+			<br>
+			<p>
+			dsfjds;fdifl;jihugjhufghfdnifdn;ifjdgigfjg;ijfdogjfdigfdgfd
+			fdgdvlkfjnfdivjmf[f'fdggfgf
+			jhgjyhglyyybdtdtdjtdtdrtsrrfhgfhjfyfk
+			dglkfdjgfd;og,jbkjhggutguytutuybuiyluiy;iy8in;iu;fdiogfdifdg<b>
+			ldskfhfuihfhfgrehgr0[8igfjdivjufdgifgihg8aerg8erhgre8[hg[gfaeirgifg;dogf</p>
+			<br>
+		
+		</div>
+		
+		
+		<div class="gallery">
+		
+			<h1>Fresh Wear GALLERY</h1><br>
+			<br>
+				<div class="image">
+					<img src="images/IMG-20160711-WA0052.jpg"/>
+				</div>
+			
+				<div class="image">
+					<img src="images/14310455_1206935642662935_6255112052664562893_o.jpg"/>
+				</div>
+				<div class="image">
+					<img src="images/IMG-20161008-WA0157.jpg"/>
+				</div>
+				
+				<div class="image">
+					<img src="images/IMG-20161008-WA0021.jpg"/>
+				</div>
+				
+				<div class="image">
+					<img src="images/IMG-20161009-WA0031.jpg"/>
+				</div>
+			
+				<div class="image">
+					<img src="images/14352554_1206934969329669_9052297229412940137_o.jpg"/>
+				</div>
+			
+				<div class="image">
+					<img src="images/14379974_1206945795995253_6750965739109925491_o.jpg"/>
+				</div>
+			
+				<div class="image">
+					<img src="images/IMG-20160711-WA0051.jpg"/>
+				</div>
+			
+		</div>		
+			
+				
+		<div class="contactme">
+			<div class="contactform">
+				<form action="index.html" method="post">
+					<input type="text" name="" class="inputtext" value="First Name">
+					<input type="text" name="" class="inputtext" value="Last Name">
+					<input type="text" name="" class="inputtext" value="Your email address">
+					<textarea cols="4" rows="6" class="inputmessage">Add your comment!!</textarea>
+					<input type="button" name="" class="submitbutton" value="Submit">
+				</form>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>		
+<script type="text/javascript">
+
+	$(document).ready(function(){
+			$('a').click(function(){
+				//alert("clicked!");
+				var selected= $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+			});
+		
+			var $a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$home = $('.home'),
+			$aboutme = $('.aboutme');
+			$gallery = $('.gallery');
+			$contactme = $('.contactme');
+		
+			$a.click(function(){
+				$home.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			});
+			$b.click(function(){
+				$home.fadeOut();
+				$aboutme.fadeIn();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			});
+			$c.click(function(){
+				$gallery.fadeIn();
+				$home.fadeOut();
+				$contactme.fadeOut();
+				$aboutme.fadeOut();
+			});	
+			$d.click(function(){
+				$contactme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$aboutme.fadeOut();
+			});
+	});
+
+
+
+
+</script>	
+
+	
+	
+</body>
+</html>	
